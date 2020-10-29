@@ -1,0 +1,10 @@
+#notfound{
+    text-align: center;
+    padding-top: 35vh;
+}
+
+@media only screen and (max-width: 411px) {
+    .not{
+        font-size: 38px;
+    }
+}

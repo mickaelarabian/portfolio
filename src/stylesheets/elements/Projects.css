@@ -1,0 +1,27 @@
+@import "../Index.css";
+
+#projects {
+	background-color: #f4f6fc;
+	box-shadow: inset 0px 20px 20px #fff;
+	text-align: center;
+}
+
+#containProjet {
+	padding-bottom: 60px;
+}
+
+.boxProjet {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.cardProjet {
+	background-color: #f4f6fc;
+	width: 200px;
+	height: 200px;
+	border-radius: 25%;
+	box-shadow: 15px 15px 20px #3754aa17, -10px -10px 20px #fff, 4px 4px 20px #ffffff80 inset,
+		-10px -10px 20px #3754aa17;
+}

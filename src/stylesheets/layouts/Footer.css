@@ -1,0 +1,21 @@
+footer {
+    background-color: #f4f6fc;
+}
+
+#footer {
+    text-align: center;
+    background-color: #f4f6fc;
+}
+
+.footer-box {
+    display: inline-block;
+    text-align: center;
+    margin: 10px 20px;
+    width: 250px;
+}
+
+.footer-title {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(3, 27, 78);
+}

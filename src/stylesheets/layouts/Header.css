@@ -1,0 +1,22 @@
+@import "../Index.css";
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    transition: 0.5s;
+    box-shadow: rgba(37, 44, 63, 0.22) -4px 0px 10px 1px;
+    display: flex;
+    z-index: 99;
+}
+
+#logo {
+    margin-left: 50px;
+}
+
+#logo-img {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}

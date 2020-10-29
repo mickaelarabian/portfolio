@@ -1,0 +1,128 @@
+@import "../Index.css";
+
+#formation {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 25px;
+    word-wrap: break-word;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+
+.parcours {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.formation-date {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.formation-title {
+    font-size: 15px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: #eaecf3;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.containetime {
+    padding: 10px;
+    position: relative;
+    background-color: inherit;
+    width: 48%;
+}
+
+/* The circles on the timeline */
+.containetime::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: -3px;
+    background-color: #f4f6fc;
+    border: 2px solid #22608d;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 54%;
+}
+
+/* Add arrows to the left container (pointing right) */
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -45px;
+}
+
+/* The actual content */
+.contenttime {
+    position: relative;
+}
+
+a.link {
+    padding: 8px 25px;
+    color:#cda560;
+    border-radius: 3px;
+    background: #ffffff;
+    box-shadow: inset 0px 0px 4px 0px #e4e4e4;
+}
+
+a:hover {
+    color: #b59256;
+}
+
+
+@media only screen and (max-width: 411px) {
+    #formation {
+        width: 310px;
+    }
+
+    .left::after, .right::after {
+        left: 23px;
+    }
+
+    .right {
+        left: 0%;
+    }
+
+    .containetime{
+        width: 77%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+}

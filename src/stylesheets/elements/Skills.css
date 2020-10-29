@@ -1,0 +1,72 @@
+@import "../Index.css";
+
+
+#skills {
+    padding: 0 350px 120px;
+    background-image: url("../../assets/fond2.png");
+}
+
+#competenceType {
+    display: flex;
+}
+
+#leger {
+    margin-right: auto;
+}
+#admin {
+    margin-left: auto;
+}
+
+#lourd,
+#requetage {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.principale {
+    background-color: #22608d;
+    padding: 2px 14px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 15px;
+    margin-right: 4px;
+}
+
+.secondaire {
+    background-color: #4cc4c6;
+    padding: 2px 14px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 15px;
+    margin-right: 4px;
+}
+
+h3.skill {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 411px) {
+    #skills {
+        padding: 0 30px 90px;
+        background-image: url("../../assets/fond2_mobile.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-color: #f4f6fd;
+    }
+
+    #competenceType {
+        display: inline;
+    }
+
+    #leger,
+    #lourd,
+    #requetage {
+        margin-bottom: 25px;
+    }
+
+    h3.skill {
+        text-align: center;
+    }
+}

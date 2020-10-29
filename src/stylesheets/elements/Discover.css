@@ -1,0 +1,57 @@
+@import "../Index.css";
+
+#discover {
+	height: 70vh;
+	padding: 0px 350px;
+}
+
+#firstdiv {
+	display: flex;
+	height: 100%;
+}
+
+.divleft {
+	width: 34%;
+	align-items: center;
+	display: flex;
+}
+
+.divright {
+	width: 66%;
+	text-align: right;
+	align-items: center;
+	display: flex;
+}
+
+.imgright {
+	margin-left: auto;
+}
+
+.title {
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 411px) {
+	#discover {
+		height: 60vh;
+		padding: 0px;
+		text-align: center;
+	}
+	.discover-cadre{
+		padding-top: 90px;
+	}
+	.divright {
+		display: none;
+	}
+	.divleft{
+		width: 100%;
+	}
+	h1{
+		font-size: 44px;
+	}
+	h2{
+		font-size: 18px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
