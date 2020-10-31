@@ -5,11 +5,14 @@
 	background-image: url("../../assets/fond.png");
 }
 
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 640px) {
     #presentation {
 		padding: 200px 30px 50px;
 	}
 	#textpropos{
 		text-align: justify;
+	}
+	.phtitle{
+		text-align: center;
 	}
 }

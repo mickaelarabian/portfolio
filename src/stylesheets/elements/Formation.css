@@ -103,7 +103,7 @@ a:hover {
 }
 
 
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 640px) {
     #formation {
         width: 310px;
     }
