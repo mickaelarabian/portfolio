@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
-import '../../stylesheets/elements/Skills.css';
+import '../../stylesheets/elements/Skills.scss';
+import ThemeSwitcher from '../../utils/ThemeSwitcher'
 
 export default class Skills extends Component {
 
     render() {
+        const { dark } = this.props
         return (
-            <section id="skills">
-                <h3 class="skill">Mes compétences</h3>
+            <section id={ThemeSwitcher.setClassName(dark, "skills")}>
+                <h3 class={ThemeSwitcher.setClassName(dark, "skill")}>Mes compétences</h3>
                 <div id="competenceType">
                     <div id="leger">
-                        <div style={{ fontSize: 19, fontWeight: 500, marginBottom: 7, color:'#212529' }}>
+                        <div class={ThemeSwitcher.setClassName(dark, "skill-subtitle")}>
                             Client Léger
             </div>
                         <div>
@@ -53,7 +55,7 @@ export default class Skills extends Component {
                     </div>
 
                     <div id="lourd">
-                        <div style={{ fontSize: 19, fontWeight: 500, marginBottom: 7, color:'#212529' }}>
+                        <div class={ThemeSwitcher.setClassName(dark, "skill-subtitle")}>
                             Client lourd
             </div>
                         <div>
@@ -73,7 +75,7 @@ export default class Skills extends Component {
                         </div>
                     </div>
                     <div id="requetage">
-                        <div style={{ fontSize: 19, fontWeight: 500, marginBottom: 7, color:'#212529' }}>
+                        <div class={ThemeSwitcher.setClassName(dark, "skill-subtitle")}>
                             Données
             </div>
                         <div>
@@ -85,7 +87,7 @@ export default class Skills extends Component {
                         </div>
                     </div>
                     <div id="admin">
-                        <div style={{ fontSize: 19, fontWeight: 500, marginBottom: 7, color:'#212529' }}>
+                        <div class={ThemeSwitcher.setClassName(dark, "skill-subtitle")}>
                             Administration
             </div>
                         <div>

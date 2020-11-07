@@ -1,9 +1,15 @@
-@import "../Index.css";
+@import "../Index.scss";
 
 
 #skills {
     padding: 0 350px 120px;
     background-image: url("../../assets/fond2.png");
+
+    &--dark{
+        @extend #skills;
+		background-color: $back_dark;
+		background-image: none;
+	}
 }
 
 #competenceType {
@@ -45,6 +51,24 @@
 
 h3.skill {
     margin-bottom: 20px;
+    color: #031b4e;
+	font-size: 25px;
+	font-weight: 500;	
+    &--dark{
+        color: #e4e4e4;
+    }
+}
+
+.skill-subtitle{
+    font-size: 19px;
+    font-weight: 500; 
+    margin-bottom: 7px; 
+    color:#212529;
+
+    &--dark{
+        @extend .skill-subtitle;
+         color: #e4e4e4;
+    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -54,6 +78,11 @@ h3.skill {
         background-position: bottom;
         background-repeat: no-repeat;
         background-color: #f4f6fd;
+
+        &--dark{
+            background-color: $back_dark;
+            background-image: none;
+        }
     }
 
     #competenceType {

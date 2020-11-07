@@ -1,10 +1,14 @@
-footer {
-    background-color: #f4f6fc;
-}
+@import "../Index.scss";
+
 
 #footer {
     text-align: center;
     background-color: #f4f6fc;
+
+    &--dark{
+        @extend #footer;
+		background-color: $back_dark;
+	}
 }
 
 .footer-box {
@@ -14,8 +18,19 @@ footer {
     width: 250px;
 }
 
+.desc{
+    &--dark{
+		color: #fff;
+	}
+}
+
 .footer-title {
     font-size: 13px;
     font-weight: 400;
     color: rgb(3, 27, 78);
+
+    &--dark{
+        @extend .footer-title;
+		color: #fff;
+	}
 }

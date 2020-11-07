@@ -1,0 +1,20 @@
+@import 'Index.scss';
+
+h3 {
+color: #031b4e;
+	font-size: 25px;
+	font-weight: 500;	
+}
+
+p {
+	color: rgba(3, 27, 78, 0.7);
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+#mainApp{
+	&--dark{
+        //@extend #mainApp;
+		background-color: $back_dark;
+	}
+}

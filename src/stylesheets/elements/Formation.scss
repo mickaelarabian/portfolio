@@ -1,4 +1,4 @@
-@import "../Index.css";
+@import "../Index.scss";
 
 #formation {
     width: 900px;
@@ -9,6 +9,21 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+
+    &--dark{
+        @extend #formation;
+		background-color: $back_dark;
+	}
+}
+
+.formation-btitle{
+    color: #031b4e;
+	font-size: 25px;
+	font-weight: 500;
+    &--dark{
+        @extend .formation-btitle;
+        color: #e4e4e4;
+   }
 }
 
 
@@ -22,10 +37,20 @@
     font-size: 15px;
     font-weight: bold;
     font-style: italic;
+
+    &--dark{
+        @extend .formation-date;
+        color: #e4e4e4;
+   }
 }
 
 .formation-title {
     font-size: 15px;
+
+    &--dark{
+        @extend .formation-title;
+        color: #e4e4e4;
+   }
 }
 
 .timeline {
@@ -96,6 +121,11 @@ a.link {
     border-radius: 3px;
     background: #ffffff;
     box-shadow: inset 0px 0px 4px 0px #e4e4e4;
+
+    &--dark{
+        @extend .link;
+        background-color: $back_dark_bis;
+   }
 }
 
 a:hover {

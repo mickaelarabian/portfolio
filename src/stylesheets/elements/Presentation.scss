@@ -1,0 +1,40 @@
+@import "../Index.scss";
+
+#presentation {
+	padding: 200px 350px 50px;
+	background-image: url("../../assets/fond.png");
+
+	&--dark{
+        @extend #presentation;
+		background-color: $back_dark;
+		background-image: none;
+	}
+}
+
+.phtitle{
+	&--dark{
+		color: #e4e4e4;
+	}
+}
+
+.strong{
+	color: rgba(3, 27, 78, 0.7);
+	&--dark{
+		color: #e4e4e4;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+    #presentation {
+		padding: 200px 30px 50px;
+	}
+	#textpropos{
+		text-align: justify;
+	}
+	.phtitle{
+		text-align: center;
+		&--dark{
+			color: #e4e4e4;
+		}
+	}
+}

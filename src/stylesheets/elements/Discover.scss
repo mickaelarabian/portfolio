@@ -1,8 +1,13 @@
-@import "../Index.css";
+@import "../Index.scss";
 
 #discover {
 	height: 70vh;
 	padding: 0px 350px;
+
+	&--dark{
+        @extend #discover;
+		background-color: $back_dark;
+	}
 }
 
 #firstdiv {
@@ -31,6 +36,29 @@
 	margin-bottom: 10px;
 }
 
+h1#mainTitle {
+	color: #031b4e;
+	font-size: 3em;
+	font-weight: 500;
+
+	&--dark{
+        @extend h1#mainTitle;
+		color: $title_dark;
+	}
+}
+
+h2#secondTitle {
+	color: rgba(3, 27, 78, 0.7);
+	font-size: 20px;
+	font-weight: 400;
+
+	&--dark{
+        @extend h2#secondTitle;
+		color: $title_dark;
+	}
+}
+
+
 @media only screen and (max-width: 640px) {
 	#discover {
 		height: 60vh;
@@ -46,7 +74,7 @@
 	.divleft{
 		width: 100%;
 	}
-	h1{
+	h1#mainTitle{
 		font-size: 44px;
 	}
 	h2{
